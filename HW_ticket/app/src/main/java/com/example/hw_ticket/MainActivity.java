@@ -1,3 +1,5 @@
+//a111222024 資科二甲 林郁旋
+
 package com.example.hw_ticket;
 
 import androidx.appcompat.app.AppCompatActivity;
