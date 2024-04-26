@@ -1,8 +1,10 @@
-//a111222024 資科二甲 林郁旋
+//a111222024
 
 package com.example.hw_ticket;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -10,6 +12,8 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+
+import java.text.BreakIterator;
 
 public class MainActivity extends AppCompatActivity {
     @Override
@@ -88,6 +92,14 @@ public class MainActivity extends AppCompatActivity {
 
                 lblOutput.setText(outputStr); // 顯示輸出字串到結果視圖
             }
+            public void onConfirmButtonClick(View view) {
+                // 創建一個 Intent 對象，指定要啟動的目標活動
+                Intent intent = new Intent(MainActivity.this, ResultActivity.class);
+
+                // 啟動新活動
+                startActivity(intent);
+            }
+
         });
     }
 }
