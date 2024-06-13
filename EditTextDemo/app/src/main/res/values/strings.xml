@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">EditTextDemo</string>
+    <string name="input_name">輸入姓名</string>
+    <string name="send">送出</string>
+    <string name="show">顯示結果</string>
+    <string name="your_name">你的名字</string>
+</resources>

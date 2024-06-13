@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/keys"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="4"
+    android:rowCount="5"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <!-- Display EditText -->
+    <EditText
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:layout_columnSpan="4"
+        android:background="@android:color/darker_gray"
+        android:gravity="right"
+        android:inputType="text"
+        android:padding="10dp"
+        android:text="0"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+    <!-- Row 1: Clear, Back, Divide, Multiply -->
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill"
+        android:onClick="processKeyInput"
+        android:text="Clear" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="116dp"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
+        android:layout_gravity="fill"
+        android:onClick="processKeyInput"
+        android:text="Back" />
+
+    <Button
+        android:id="@+id/btnDivide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
+        android:layout_gravity="fill"
+        android:onClick="processKeyInput"
+        android:text="/" />
+
+    <!-- Row 2: 7, 8, 9, Subtract -->
+    <Button
+        android:id="@+id/btn7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
+        android:layout_gravity="fill"
+        android:onClick="processKeyInput"
+        android:text="7" />
+
+    <Button
+        android:id="@+id/btn8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
+        android:layout_gravity="fill"
+        android:onClick="processKeyInput"
+        android:text="8" />
+
+    <Button
+        android:id="@+id/btn9"
+        android:layout_width="74dp"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
+        android:layout_gravity="fill"
+        android:onClick="processKeyInput"
+        android:text="9" />
+
+    <Button
+        android:id="@+id/btnSubtract"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
+        android:layout_gravity="fill"
+        android:onClick="processKeyInput"
+        android:text="-" />
+
+    <!-- Row 3: 4, 5, 6, Add -->
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
+        android:layout_gravity="fill"
+        android:onClick="processKeyInput"
+        android:text="4" />
+
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
+        android:layout_gravity="fill"
+        android:onClick="processKeyInput"
+        android:text="5" />
+
+    <Button
+        android:id="@+id/btn6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
+        android:layout_gravity="fill"
+        android:onClick="processKeyInput"
+        android:text="6" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
+        android:layout_gravity="fill"
+        android:onClick="processKeyInput"
+        android:text="+" />
+
+    <!-- Row 4: 1, 2, 3, Multiply -->
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
+        android:layout_gravity="fill"
+        android:onClick="processKeyInput"
+        android:text="1" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
+        android:layout_gravity="fill"
+        android:onClick="processKeyInput"
+        android:text="2" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
+        android:layout_gravity="fill"
+        android:onClick="processKeyInput"
+        android:text="3" />
+
+    <Button
+        android:id="@+id/btnMultiply"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
+        android:layout_gravity="fill"
+        android:onClick="processKeyInput"
+        android:text="*" />
+
+    <!-- Row 5: 0, Equals -->
+    <Button
+        android:id="@+id/btn0"
+        android:layout_width="192dp"
+        android:layout_height="360dp"
+        android:layout_columnSpan="3"
+        android:layout_gravity="fill"
+        android:onClick="processKeyInput"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/btnEquals"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
+        android:layout_gravity="fill"
+        android:onClick="processKeyInput"
+        android:text="=" />
+
+</GridLayout>
